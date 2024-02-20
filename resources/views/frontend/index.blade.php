@@ -84,7 +84,7 @@
                 <div class="col-12">
                     <div class="product-info">
                         <div class="nav-main">
-                            <!-- Tab Nav -->
+                            <!-- Tab Nav->
                             <ul class="nav nav-tabs filter-tope-group" id="myTab" role="tablist">
                                 @php
                                     $categories=DB::table('categories')->where('status','active')->where('is_parent',1)->get();
