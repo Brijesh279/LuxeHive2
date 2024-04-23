@@ -397,7 +397,7 @@
                                 <!-- Order Widget -->
                                 <div class="single-widget">
                                     <h2>Payments</h2>
-                                    <div class="content">
+                                    <div' class="content">
                                         <div class="checkbox">
                                             {{-- <label class="checkbox-inline" for="1"><input name="updates" id="1" type="checkbox"> Check Payments</label> --}}
                                             <form-group>
@@ -572,7 +572,7 @@
 				let subtotal = parseFloat( $('.order_subtotal').data('price') );
 				let coupon = parseFloat( $('.coupon_price').data('price') ) || 0;
 				// alert(coupon);
-				$('#order_total_price span').text('$'+(subtotal + cost-coupon).toFixed(2));
+				$('#order_total_price span').text('Rs.'+(subtotal + cost-coupon).toFixed(2));
 			});
 
 		});
