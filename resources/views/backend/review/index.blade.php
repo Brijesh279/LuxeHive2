@@ -24,7 +24,7 @@
               <th>Rate</th>
               <th>Date</th>
               <th>Status</th>
-              <th>Action</th>
+              <!-- <th>Action</th> -->
             </tr>
           </thead>
           <tfoot>
@@ -36,7 +36,7 @@
               <th>Rate</th>
               <th>Date</th>
               <th>Status</th>
-              <th>Action</th>
+              <!-- <th>Action</th> -->
               </tr>
           </tfoot>
           <tbody>
@@ -65,14 +65,14 @@
                           <span class="badge badge-warning">{{$review->status}}</span>
                         @endif
                     </td>
-                    <td>
+                    <!-- <td>
                         <a href="{{route('review.edit',$review->id)}}" class="btn btn-primary btn-sm float-left mr-1" style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" title="edit" data-placement="bottom"><i class="fas fa-edit"></i></a>
                         <form method="POST" action="{{route('review.destroy',[$review->id])}}">
                           @csrf
                           @method('delete')
                               <button class="btn btn-danger btn-sm dltBtn" data-id={{$review->id}} style="height:30px; width:30px;border-radius:50%" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fas fa-trash-alt"></i></button>
                         </form>
-                    </td>
+                    </td> -->
                 </tr>
             @endforeach
           </tbody>
